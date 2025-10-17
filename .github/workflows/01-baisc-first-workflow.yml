@@ -1,6 +1,6 @@
 name: 01-baisc-first-workflow.yml
 on:
-  push
+  pull_request
 
 
 jobs:
