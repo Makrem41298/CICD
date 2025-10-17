@@ -1,6 +1,10 @@
 name: 01-baisc-first-workflow.yml
 on:
-  pull_request
+  pull_request:
+    branches:
+      - testPulrequest
+    types:
+      - closed
 
 
 jobs:
