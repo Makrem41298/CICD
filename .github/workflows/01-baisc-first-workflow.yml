@@ -1,12 +1,13 @@
 name: 01-baisc-first-workflow.yml
 on:
-  workflow_dispatch
+  push
 
 
 jobs:
   print-hello-word:
     runs-on: ubuntu-latest
     steps:
-      - name: PrintHelow word
+      - name: Print Helow word
         run: echo "Hello word"
+
 
