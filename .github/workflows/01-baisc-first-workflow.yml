@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Helow word
-        run: echo "{{github.action}}"
+        run: echo {{github.action}}
 
 
