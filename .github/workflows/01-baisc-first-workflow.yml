@@ -4,7 +4,7 @@ on:
 jobs:
   print-hello-word:
     runs-on: ubuntu-latest
-    if: ${{repository_owner==makrem}}
+    if: ${{repository_owner==Makrem41298}}
     steps:
       - name: Print Helow word
         run: echo "test ok"
