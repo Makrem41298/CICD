@@ -1,12 +1,12 @@
-name: 01-baisc-first-workflow.yml
+name: 01-basic-first-workflow
+
 on:
-  workflow_dispatch
+  workflow_dispatch:
+
 jobs:
-  print-hello-word:
+  print-hello-world:
     runs-on: ubuntu-latest
-    if: ${{repository_owner==Makrem41298}}
+    if: ${{ github.repository_owner == 'Makrem41298' }}
     steps:
-      - name: Print Helow word
+      - name: Print Hello World
         run: echo "test ok"
-
-
