@@ -4,8 +4,9 @@ on:
 jobs:
   print-hello-word:
     runs-on: ubuntu-latest
+    if: ${{repository_owner==makrem}}
     steps:
       - name: Print Helow word
-        run: echo ${{toJSON(github)}}
+        run: echo "test ok"
 
 
