@@ -3,10 +3,13 @@ name: 01-basic-first-workflow
 on:
   workflow_dispatch:
 
+env:
+  NAME: "makrem"
+
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'Makrem41298' }}
     steps:
       - name: Print Hello World
-        run: echo "test ok"
+        run: echo "Hello ${{ env.NAME }}"
