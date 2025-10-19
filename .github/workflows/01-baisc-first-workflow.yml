@@ -12,4 +12,4 @@ jobs:
     if: ${{ github.repository_owner == 'Makrem41298' }}
     steps:
       - name: Print Hello World
-        run: echo "Hello ${{ env.NAME }}"
+        run: echo "Hello ${{ vars.TEST_CONFIG}}"
