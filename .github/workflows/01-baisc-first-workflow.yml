@@ -1,6 +1,6 @@
 name: 01-baisc-first-workflow.yml
 on:
-  repository_dispatch
+  workflow_dispatch
 jobs:
   print-hello-word:
     runs-on: ubuntu-latest
