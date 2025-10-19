@@ -1,0 +1,11 @@
+name: 02-baisic-workflow.yml
+on:
+  workflow_dispatch:
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World 2
+        run: echo "Hello ${{ vars.TEST_CONFIG}} 2"
+
