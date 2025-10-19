@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World 2
-        run: echo "Hello ${{ vars.TEST_CONFIG}} 2"
+        run: echo "Hello ${{ secrets.SECURET_VAR}} 2"
 
