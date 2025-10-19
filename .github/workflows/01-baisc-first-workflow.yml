@@ -1,7 +1,6 @@
 name: 01-baisc-first-workflow.yml
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  repository_dispatch
 jobs:
   print-hello-word:
     runs-on: ubuntu-latest
