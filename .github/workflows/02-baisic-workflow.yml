@@ -1,13 +1,14 @@
 name: 02-baisic-workflow.yml
 on:
   workflow_dispatch:
+env:
+  TEST: ${{github.action=='push'&&true||false}}
 
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
+    if: env.TEST
     steps:
-      - name: Print Hello World 2
-        run:  exit 1
+
       - name: test
-        if: ${{success()&&false||true}}
         run: echo " test valid"
