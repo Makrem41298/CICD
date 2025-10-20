@@ -12,3 +12,9 @@ jobs:
     steps:
       - name: Test
         run: echo ${{env.XX}}
+  teq2:
+    runs-on: ubuntu-latest
+    steps:
+      -name : xxx
+      run : echo ""test2 valide""
+
