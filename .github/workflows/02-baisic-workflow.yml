@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
 
 env:
-  TEST: ${{ github.event_name == 'push' }}
+  TEST: "test"
 
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    if: ${{ env.TEST==true }}
+    if: ${{ env.TEST=='test' }}
     steps:
       - name: Test
         run: echo "test valid"
