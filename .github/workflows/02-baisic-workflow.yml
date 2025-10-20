@@ -13,6 +13,7 @@ jobs:
       - name: Test
         run: echo ${{env.XX}}
   teq2:
+    needs: print-hello-world
     runs-on: ubuntu-latest
     steps:
       - name : xxx
