@@ -1,14 +1,15 @@
-name: 02-baisic-workflow.yml
+name: 02-basic-workflow
+
 on:
   workflow_dispatch:
+
 env:
-  TEST: ${{github.action=='push'&&true||false}}
+  TEST: ${{ github.event_name == 'push' }}
 
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    if: env.TEST
+    if: ${{ env.TEST }}
     steps:
-
-      - name: test
-        run: echo " test valid"
+      - name: Test
+        run: echo "test valid"
