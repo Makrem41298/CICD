@@ -9,7 +9,7 @@ env:
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    if: ${{ env.TEST }}
+    if: ${{ env.TEST==true }}
     steps:
       - name: Test
         run: echo "test valid"
