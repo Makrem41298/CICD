@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: echo ${{env.XX}}
+        run: exit 1
   teq2:
     needs: print-hello-world
     runs-on: ubuntu-latest
