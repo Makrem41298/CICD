@@ -9,5 +9,5 @@ jobs:
       - name: Print Hello World 2
         run:  exit 1
       - name: test
-        if: ${{success()&&true||false}}
+        if: ${{success()&&false||true}}
         run: echo " test valid"
