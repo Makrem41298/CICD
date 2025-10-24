@@ -15,11 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: exit 1
-  teq2:
-    needs: print-hello-world
-    runs-on: ubuntu-latest
-    steps:
-      - name : xxx
-        run : echo ""test2 valide""
+        run: echo php--version
 
