@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: echo php--version
+        run: php -v
 
