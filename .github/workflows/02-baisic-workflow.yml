@@ -6,8 +6,12 @@ on:
 env:
   XX: "test"
 
+
 jobs:
+
   print-hello-world:
+    container:
+      image: php:7.2
     runs-on: ubuntu-latest
     steps:
       - name: Test
