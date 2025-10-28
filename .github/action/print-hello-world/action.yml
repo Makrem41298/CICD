@@ -1,9 +1,8 @@
-name: print Hello world
+name: Print Hello World
 description: Print hello world
+
 runs:
+  using: composite
   steps:
-    using: composite
-    -run: echo "hello world"
-      shell:bash
-
-
+    - run: echo "Hello World"
+      shell: bash
